@@ -1,0 +1,30 @@
+name: Task
+description: Internal development task
+labels: ["task"]
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - iOS App
+        - Cloud Relay
+        - SDK
+        - Infrastructure
+        - Marketing
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Task description
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] Criteria 1
+        - [ ] Criteria 2
